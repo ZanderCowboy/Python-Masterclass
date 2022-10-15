@@ -16,8 +16,13 @@ with open(input_filename) as country_file:
             'timezone': timezone,
             'currency': currency,
         }
-        print(country_dict)
+        # print(country_dict)
         countries[country.casefold()] = country_dict
 
 print(countries)
 
+# print("Choose one of the following countries: ")
+# for country in countries:
+#     print(country)
+# input_country = input("> ")
+# print(countries[input_country]['capital'])
